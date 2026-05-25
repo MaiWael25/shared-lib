@@ -1,16 +1,16 @@
 package edu.iti;
 
-def build(imageName, imageTag)
+def build(imageName)
 {
-    sh "docker build -t ${imageName}:${imageTag}"
+    sh "docker build -t ${imageName}"
 
 }
-/*def push(imageName, imageTag)
+def push(imageName)
 {
-    sh "docker push -t ${imageName}:${imageTag}"
+    sh "docker push -t ${imageName}}"
 
 }
-*/
+
 def login(userName, passWord)
 {
     sh "docker login -u ${userName} -p ${passWord}"
