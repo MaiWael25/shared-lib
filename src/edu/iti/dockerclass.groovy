@@ -20,11 +20,11 @@ def login(userName, passWord)
 */
 package edu.iti
 
-class DockerClass implements Serializable {
+class dockerclass implements Serializable {
 
     def steps
 
-    DockerClass(steps) {
+    dockerclass(steps) {
         this.steps = steps
     }
 
