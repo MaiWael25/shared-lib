@@ -1,13 +1,13 @@
 package edu.iti;
 
-def build(imageName)
+def build(imageName, imageTag)
 {
-    sh "docker build -t ${imageName}"
+    sh "docker build -t ${imageName}:${imageTag}"
 
 }
-def push(imageName)
+def push(imageName, imageTag)
 {
-    sh "docker push -t ${imageName}}"
+    sh "docker push -t ${imageName}:${imageTag}"
 
 }
 
