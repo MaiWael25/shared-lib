@@ -1,10 +1,18 @@
-package iti.edu
+package edu.iti
 
-def build (commandOption)
-{
-    sh "mvn $(commandOption)"
-}
-def test (nanInput= "nan")
-{
-    sh "mvn test"
+class MavenClass implements Serializable {
+
+    def steps
+
+    MavenClass(steps) {
+        this.steps = steps
+    }
+
+    def build(command) {
+        steps.sh "mvn ${command}"
+    }
+
+    def test() {
+        steps.sh "mvn test"
+    }
 }
