@@ -1,10 +1,10 @@
 package edu.iti
 
-class MavenClass implements Serializable {
+class mavenClass implements Serializable {
 
     def steps
 
-    MavenClass(steps) {
+    mavenClass(steps) {
         this.steps = steps
     }
 
